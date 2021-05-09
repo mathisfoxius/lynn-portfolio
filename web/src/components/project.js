@@ -13,17 +13,17 @@ function Project(props) {
   const { _rawBody, title, categories, mainImage, members, publishedAt, relatedProjects } = props;
   return (
     <article className={styles.root}>
-      {props.mainImage && mainImage.asset && (
-        <div className={styles.mainImage}>
-          <img
-            src={imageUrlFor(buildImageObj(mainImage))
-              .url()}
-            alt={mainImage.alt}
-          />
-        </div>
-      )}
       <Container>
         <div className={styles.grid}>
+          {props.mainImage && mainImage.asset && (
+          <div className={styles.mainImage}>
+            <img
+              src={imageUrlFor(buildImageObj(mainImage))
+                .url()}
+              alt={mainImage.alt}
+            />
+          </div>
+        )}
           <div className={styles.mainContent}>
             <h1 className={styles.title}>{title}</h1>
             {_rawBody && <BlockContent blocks={_rawBody || []} />}
