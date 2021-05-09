@@ -20,7 +20,7 @@ export const query = graphql`
       keywords
     }
     projects: allSanitySampleProject(
-      limit: 6
+      limit: 100
       sort: { fields: [publishedAt], order: DESC }
       filter: { slug: { current: { ne: null } }, publishedAt: { ne: null } }
     ) {
@@ -90,9 +90,7 @@ const IndexPage = props => {
       <Container>
         {projectNodes && (
           <ProjectPreviewGrid
-            title="Latest projects"
             nodes={projectNodes}
-            browseMoreHref="/archive/"
           />
         )}
       </Container>
