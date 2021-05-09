@@ -14,20 +14,14 @@
   margin: 2rem 0;
 }
 
-.grid {
-  margin: 0;
-  padding: 0;
+.container {
   list-style: none;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 1em;
-
-  @media (--media-min-small) {
-    grid-template-columns: 1fr 1fr;
-  }
+  column-count: 1;
+  margin: 0 auto;
+  padding: 30px;
 
   @media (--media-min-medium) {
-    grid-template-columns: 1fr 1fr;
+    column-count: 2;
   }
 }
 

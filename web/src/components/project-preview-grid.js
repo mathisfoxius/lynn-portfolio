@@ -7,7 +7,7 @@ import * as styles from "./project-preview-grid.module.css";
 function ProjectPreviewGrid(props) {
   return (
     <div className={styles.root}>
-      <ul className={styles.grid}>
+      <ul className={styles.container}>
         {props.nodes &&
           props.nodes.map(node => (
             <li key={node.id}>

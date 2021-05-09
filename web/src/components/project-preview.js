@@ -10,13 +10,10 @@ import { responsiveTitle3 } from "./typography.module.css";
 function ProjectPreview(props) {
   return (
     <Link className={styles.root} to={`/project/${props.slug.current}`}>
-      <div className={styles.leadMediaThumb}>
+      <div>
         {props.mainImage && props.mainImage.asset && (
-          <img
+          <img className="thumbnail"
             src={imageUrlFor(buildImageObj(props.mainImage))
-              .width(1000)
-              .height(1000)
-              .fit("crop")
               .url()}
             alt={props.mainImage.alt}
           />

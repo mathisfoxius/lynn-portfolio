@@ -12,15 +12,16 @@
   position: relative;
   padding-bottom: 100%;
   background: rgb(250, 208, 208);
+  width: 100%;
+  height: auto;
+}
 
-  @nest & img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    max-height: 100%;
-    object-fit: cover;
-  }
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+  padding: 10px;
 }
 
 .title {
