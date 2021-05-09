@@ -12,7 +12,7 @@ function ProjectPreview(props) {
     <Link className={styles.root} to={`/project/${props.slug.current}`}>
       <div>
         {props.mainImage && props.mainImage.asset && (
-          <img className="thumbnail"
+          <img
             src={imageUrlFor(buildImageObj(props.mainImage))
               .url()}
             alt={props.mainImage.alt}
