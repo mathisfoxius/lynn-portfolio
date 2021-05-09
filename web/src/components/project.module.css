@@ -9,8 +9,8 @@
 
 .mainImage {
   position: relative;
-  background: #eee;
-  padding-bottom: calc(9 / 16 * 100%);
+  background: rgb(255, 255, 255);
+  padding-bottom: calc(1 * 100%);
 
   @nest & img {
     position: absolute;
