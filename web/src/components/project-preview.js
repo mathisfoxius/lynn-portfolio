@@ -14,14 +14,17 @@ function ProjectPreview(props) {
         {props.mainImage && props.mainImage.asset && (
           <img
             src={imageUrlFor(buildImageObj(props.mainImage))
+              .width(1000)
+              .height(1000)
+              .fit("crop")
               .url()}
             alt={props.mainImage.alt}
           />
         )}
       </div>
-      <h3 className={cn(responsiveTitle3, styles.title)}>{props.title}</h3>
+      <h3 hidden className={cn(responsiveTitle3, styles.title)}>{props.title}</h3>
       {props._rawExcerpt && (
-        <div className={styles.excerpt}>
+        <div hidden className={styles.excerpt}>
           <BlockText blocks={props._rawExcerpt} />
         </div>
       )}
