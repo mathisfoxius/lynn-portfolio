@@ -11,7 +11,7 @@
 .leadMediaThumb {
   position: relative;
   padding-bottom: 100%;
-  background: #eee;
+  background: rgb(255, 255, 255);
 
   @nest & img {
     position: absolute;
