@@ -21,6 +21,18 @@ export default {
       description: 'Describe your portfolio for search engines and social media.'
     },
     {
+      name: 'left',
+      title: 'Left Colon',
+      type: 'array',
+      of: [{type: 'reference', to: {type: 'sampleProject'}}]
+    },
+    {
+      name: 'right',
+      title: 'Right Colon',
+      type: 'array',
+      of: [{type: 'reference', to: {type: 'sampleProject'}}]
+    },
+    {
       name: 'keywords',
       type: 'array',
       title: 'Keywords',
