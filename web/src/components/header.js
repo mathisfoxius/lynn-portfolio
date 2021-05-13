@@ -20,6 +20,7 @@ const Header = ({ onHideNav, onShowNav, showNav, siteTitle }) => (
         <ul>
           <li>
             <Link to="https://www.instagram.com/lynnkelders/">Instagram</Link>
+            <Link to="/aboutMe/">About Me</Link>
           </li>
         </ul>
       </nav>
