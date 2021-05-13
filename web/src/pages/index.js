@@ -16,6 +16,36 @@ export const query = graphql`
     site: sanitySiteSettings(_id: { regex: "/(drafts.|)siteSettings/" }) {
       title
       description
+      single {
+        id
+        mainImage {
+          crop {
+            _key
+            _type
+            top
+            bottom
+            left
+            right
+          }
+          hotspot {
+            _key
+            _type
+            x
+            y
+            height
+            width
+          }
+          asset {
+            _id
+          }
+          alt
+        }
+        title
+        _rawExcerpt
+        slug {
+          current
+        }
+      }
       left {
         id
         mainImage {
@@ -150,6 +180,7 @@ const IndexPage = props => {
         {projectNodes && (
           <ProjectPreviewGrid
             nodes={projectNodes}
+            single={site.single}
             left={site.left}
             right={site.right}
           />
