@@ -15,10 +15,10 @@ export default {
       title: 'Title'
     },
     {
-      name: 'description',
+      name: 'aboutMe',
       type: 'text',
-      title: 'Description',
-      description: 'Describe your portfolio for search engines and social media.'
+      title: 'About Me',
+      description: 'Schreiw eppes iwwert dech :)'
     },
     {
       name: 'single',
@@ -37,6 +37,13 @@ export default {
       title: 'Right Colon',
       type: 'array',
       of: [{type: 'reference', to: {type: 'sampleProject'}}]
+    },
+
+    {
+      name: 'description',
+      type: 'text',
+      title: 'Description',
+      description: 'Describe your portfolio for search engines and social media.'
     },
     {
       name: 'keywords',

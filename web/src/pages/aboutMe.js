@@ -37,8 +37,9 @@ const AboutMePage = props => {
 
   return (
     <Layout>
-      <SEO title="{site.title}" description={site.description} keywords={site.keywords} />
+      <SEO title={site.title} description={site.description} keywords={site.keywords} />
       <Container>
+        <p>{site.aboutMe}</p>
         <p>LOL</p>
       </Container>
     </Layout>
