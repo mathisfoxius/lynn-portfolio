@@ -15,12 +15,6 @@ export default {
       title: 'Title'
     },
     {
-      name: 'aboutMe',
-      type: 'text',
-      title: 'About Me',
-      description: 'Schreiw eppes iwwert dech :)'
-    },
-    {
       name: 'single',
       title: 'Single Colon',
       type: 'array',
