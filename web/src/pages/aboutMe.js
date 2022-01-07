@@ -58,6 +58,10 @@ const AboutMePage = props => {
         <p>
         (Text: Julia Szymik)
         </p>
+        <br></br>
+        <h2>Press</h2>
+        <p>Luxemburger Tageblatt: <a href="https://www.tageblatt.lu/headlines/lynn-kelders-1997-berlin-luxemburg/">FR.A.RT (10) / Lynn Kelders, 1997, Berlin/Luxemburg</a></p>
+        <p>Culture.lu: <a href="https://culture.lu/blog/articles/interviews/lynn-kelders-vum-studium-zum">Lynn Kelders - Vum Studium zum...</a></p>
       </Container>
     </Layout>
   );
